@@ -1,6 +1,6 @@
 //
-//  SwipingController.swift
-//  ImageScroll
+//  PictureViewerVC.swift
+//  PicViewer
 //
 //  Created by Isaac Raval on 5/11/19.
 //  Copyright © 2019 Isaac Raval. All rights reserved.
@@ -16,23 +16,18 @@ class PictureViewerVC: UICollectionViewController, UIGestureRecognizerDelegate {
     var initialTouchPoint = CGPoint(x: 0, y: 0)
     
     //For later use
-    let imageNamesToDisplayInEachCell = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
+    let imgNamesToDispInEachCell = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Misc setup
         setup()
+
+        //Show image at given index (set previously). Ignore first dummy element.
+        print("Scrolling to index \(indexToStartAt)")
+        scrollTo(specifiedCell: indexToStartAt - 1)
         
-        //Add observer to listen for drag gesture
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerHandler))
-        panGesture.delegate = self
-        view.addGestureRecognizer(panGesture)
-
-        //Default to showing first image (default val of indexToStartAt is 0), but if changed, go to that index
-        scrollTo(specifiedCell: indexToStartAt)
-
-
     }
 }
 

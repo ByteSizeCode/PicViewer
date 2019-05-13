@@ -1,6 +1,6 @@
 //
-//  GalleryVCPageCell.swift
-//  ImageScroll
+//  PreviewCell.swift
+//  PicViewer
 //
 //  Created by Isaac Raval on 5/12/19.
 //  Copyright © 2019 Isaac Raval. All rights reserved.

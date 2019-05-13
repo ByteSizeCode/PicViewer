@@ -1,6 +1,6 @@
 //
-//  NavigationController.swift
-//  ImageScroll
+//  NavigationControllerVC.swift
+//  PicViewer
 //
 //  Created by Isaac Raval on 5/12/19.
 //  Copyright © 2019 Isaac Raval. All rights reserved.
@@ -19,8 +19,7 @@ class NavigationController: UINavigationController {
     
     func showPreviewVC() {
         let VCLayout = UICollectionViewFlowLayout()
-        VCLayout.scrollDirection = .horizontal //Set cell scrolling direction
-        
+
         let navViewController = PreviewVC(collectionViewLayout: VCLayout)
         viewControllers = [navViewController]
     }

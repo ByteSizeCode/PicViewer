@@ -1,6 +1,6 @@
 //
-//  PageCell.swift
-//  ImageScroll
+//  PictureViewerCell.swift
+//  PicViewer
 //
 //  Created by Isaac Raval on 5/11/19.
 //  Copyright © 2019 Isaac Raval. All rights reserved.

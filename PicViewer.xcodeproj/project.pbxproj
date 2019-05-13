@@ -86,9 +86,9 @@
 		6ACC03FB22892C8F00455699 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6ACC03FE22892C8F00455699 /* PictureViewerVC */,
-				6ACC040D22892D9E00455699 /* Preview VC */,
 				6ACC03FD22892C8F00455699 /* NavigationControllerVC.swift */,
+				6ACC040D22892D9E00455699 /* Preview VC */,
+				6ACC03FE22892C8F00455699 /* PictureViewerVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
