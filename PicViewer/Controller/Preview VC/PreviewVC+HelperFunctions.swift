@@ -62,6 +62,5 @@ extension PreviewVC {
             //Display Image selected
             self.navigationController?.pushViewController(VC, animated: true)
         }
-        
     }
 }
